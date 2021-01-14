@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #dffcfb;
+}
+body {
+  height: 100%;
+  font-family: Hack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 70%;
+  background-color: #fff;
+  text-align: center;
+  /* box-sizing: border-box */
+  padding: 20px;
+  border-radius: 15px;
+}
+.content span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.content .username {
+  margin-bottom: 10px;
+}
+.content .username input {
+  height: 25px;
+  border: 1px solid #3BA3FD;
+  outline: none;
+}
+.content .username input::placeholder {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.content .password {
+  margin-bottom: 30px;
+}
+.content .password input {
+  height: 25px;
+  border: 1px solid #3BA3FD;
+  background: none;
+  outline: none;
+}
+.content .password input::placeholder {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.content button {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to right, #3BA3FD, #5EDAFD);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.content button:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+
+/*# sourceMappingURL=/style.2cf34713.css.map */
