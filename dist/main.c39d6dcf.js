@@ -118,10 +118,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.ts":[function(require,module,exports) {
-"use strict";
+// console.log('hello world')
+window.onload = function () {
+  var Uname = document.getElementById('uname');
+  var Upass = document.getElementById('upass');
+  var oError = document.getElementById('error_box');
+  var isError = true;
 
-console.log('hello world');
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  if (Uname.value.length > 20 || Uname.value.length < 6) {
+    oError.innerHTML = '用户名请输入6-20位字符';
+    isError = false;
+    return;
+  } else if (Uname.value.charCodeAt(0) >= 48 && Uname.value.charCodeAt(0) <= 57) {
+    Uname.innerHTML = "首字母必须为字母";
+    return;
+  }
+};
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -149,7 +162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53460" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9730" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -325,5 +338,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","main.ts"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.ts"], null)
 //# sourceMappingURL=/main.c39d6dcf.js.map
