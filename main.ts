@@ -10,6 +10,6 @@ window.onload = function () {
         return
     } else if ((Uname.value.charCodeAt(0) >= 48) && (Uname.value.charCodeAt(0) <= 57)) {
         Uname.innerHTML = "首字母必须为字母"
-        return
+
     }
 }

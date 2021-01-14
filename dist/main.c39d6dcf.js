@@ -131,7 +131,6 @@ window.onload = function () {
     return;
   } else if (Uname.value.charCodeAt(0) >= 48 && Uname.value.charCodeAt(0) <= 57) {
     Uname.innerHTML = "首字母必须为字母";
-    return;
   }
 };
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
